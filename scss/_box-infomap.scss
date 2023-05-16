@@ -1,0 +1,60 @@
+//START MAP
+.map {
+  padding: 30px 0 50px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+
+  .mapWrapper {
+    width: 95%;
+    display: flex;
+
+    .mapText {
+      width: 35%;
+      display: flex;
+      justify-content: space-around;
+      flex-flow: column;
+
+      .text {
+        margin: 0 auto;
+        h4 {
+          font-size: 20px;
+          font-weight: bold;
+          padding-bottom: 15px;
+          color: $Dark;
+          text-align: center;
+        }
+        p {
+          font-weight: lighter;
+          padding: 5px 0;
+          color: $Dark;
+        }
+      }
+    }
+    .mapDiv {
+      width: 65%;
+      height: 600px;
+    }
+  }
+}
+
+//END MAP
+
+@media (max-width: 630px) {
+  .map {
+    padding: 0;
+
+    .mapWrapper {
+      flex-flow: column;
+      width: 100%;
+      .mapText {
+        display: none;
+      }
+      .mapDiv {
+        width: 100%;
+        padding: 20px;
+      }
+    }
+  }
+}

@@ -2550,41 +2550,20 @@ a {
   background-color: rgb(65, 65, 65);
 }
 
-body .overlayImg {
-  position: absolute;
-  transition: 200ms ease-in-out;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-}
-body .undermenu {
-  height: 50px;
-  width: 100%;
-}
-body .mycontainer {
-  width: 96%;
-  margin: 0 auto;
-  max-width: 1350px;
-}
-body .navvv {
+.navvv {
   @import url(https://fonts.googleapis.com/css?family=Raleway);
 }
-body .navvv .top-nav .logoText {
+.navvv .top-nav .logoText {
   color: #fffaf7;
 }
-body .navvv .wrap {
+.navvv .wrap {
   background-color: #222;
 }
-body .navvv h2 {
+.navvv h2 {
   vertical-align: center;
   text-align: center;
 }
-body .navvv .top-nav {
+.navvv .top-nav {
   position: fixed;
   width: 100%;
   z-index: 99999;
@@ -2602,24 +2581,24 @@ body .navvv .top-nav {
   height: 50px;
   padding: 1em;
 }
-body .navvv .menu {
+.navvv .menu {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-body .navvv .menu a {
+.navvv .menu a {
   color: #fffaf7;
 }
-body .navvv .menu .menuLi {
+.navvv .menu .menuLi {
   align-items: center;
 }
-body .navvv .menu > li {
+.navvv .menu > li {
   margin: 0 1rem;
   overflow: hidden;
 }
-body .navvv .menu-button-container {
+.navvv .menu-button-container {
   display: none;
   height: 100%;
   width: 30px;
@@ -2628,12 +2607,12 @@ body .navvv .menu-button-container {
   justify-content: center;
   align-items: center;
 }
-body .navvv #menu-toggle {
+.navvv #menu-toggle {
   display: none;
 }
-body .navvv .menu-button,
-body .navvv .menu-button::before,
-body .navvv .menu-button::after {
+.navvv .menu-button,
+.navvv .menu-button::before,
+.navvv .menu-button::after {
   display: block;
   background-color: #fff;
   position: absolute;
@@ -2642,32 +2621,32 @@ body .navvv .menu-button::after {
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
 }
-body .navvv .menu-button::before {
+.navvv .menu-button::before {
   content: "";
   margin-top: -8px;
 }
-body .navvv .menu-button::after {
+.navvv .menu-button::after {
   content: "";
   margin-top: 8px;
 }
-body .navvv #menu-toggle:checked + .menu-button-container .menu-button::before {
+.navvv #menu-toggle:checked + .menu-button-container .menu-button::before {
   margin-top: 0px;
   transform: rotate(405deg);
 }
-body .navvv #menu-toggle:checked + .menu-button-container .menu-button {
+.navvv #menu-toggle:checked + .menu-button-container .menu-button {
   background: #222222;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
-body .navvv #menu-toggle:checked + .menu-button-container .menu-button::after {
+.navvv #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
 @media (max-width: 700px) {
-  body .navvv .menu-button-container {
+  .navvv .menu-button-container {
     display: flex;
   }
-  body .navvv .menu {
+  .navvv .menu {
     position: absolute;
     top: 0;
     margin-top: 50px;
@@ -2677,24 +2656,24 @@ body .navvv #menu-toggle:checked + .menu-button-container .menu-button::after {
     justify-content: center;
     align-items: center;
   }
-  body .navvv #menu-toggle ~ .menu li {
+  .navvv #menu-toggle ~ .menu li {
     height: 0;
     margin: 0;
     padding: 0;
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  body .navvv #menu-toggle:checked ~ .menu li:first-child {
+  .navvv #menu-toggle:checked ~ .menu li:first-child {
     border-top: 2px solid #333;
   }
-  body .navvv #menu-toggle:checked ~ .menu li {
+  .navvv #menu-toggle:checked ~ .menu li {
     border-bottom: 2px solid #333;
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     background-color: 204;
   }
-  body .navvv .menu > li {
+  .navvv .menu > li {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -2704,7 +2683,8 @@ body .navvv #menu-toggle:checked + .menu-button-container .menu-button::after {
     background-color: #222;
   }
 }
-body .menuWrapper {
+
+.menuWrapper {
   height: 50px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.863);
@@ -2715,7 +2695,7 @@ body .menuWrapper {
   display: flex;
   justify-content: space-between;
 }
-body .menuWrapper .wrapper {
+.menuWrapper .wrapper {
   width: 95%;
   height: 50px;
   display: flex;
@@ -2724,28 +2704,36 @@ body .menuWrapper .wrapper {
   display: flex;
   margin: 0 auto;
 }
-body .menuWrapper .wrapper .left {
-  width: 30%;
+.menuWrapper .wrapper .left {
+  width: 40%;
   font-family: "BenchNine", sans-serif;
   font-size: 30px;
   font-weight: bolder;
 }
-body .menuWrapper .wrapper .left li {
+.menuWrapper .wrapper .left li {
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-size: 25px;
 }
-body .menuWrapper .wrapper .left li .menuBtn {
+.menuWrapper .wrapper .left li .menuBtn {
   transition: 0.5s;
 }
-body .menuWrapper .wrapper .left li .menuBtn:hover {
+.menuWrapper .wrapper .left li .menuBtn:hover {
   color: rgb(112, 112, 112);
 }
-body .menuWrapper .wrapper .left li a {
+.menuWrapper .wrapper .left li a {
   color: #fffaf7;
 }
-body .menuWrapper .wrapper .right .reserv-button {
+.menuWrapper .wrapper .right a {
+  font-family: "BenchNine", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 30px;
+  color: #fffaf7;
+}
+.menuWrapper .wrapper .right .reserv-button {
   min-width: 148px;
   padding: 0px 5px;
   border: 2px solid #fffaf7;
@@ -2762,7 +2750,7 @@ body .menuWrapper .wrapper .right .reserv-button {
   cursor: pointer;
   font-weight: bold;
 }
-body .menuWrapper .wrapper .right .reserv-button::before {
+.menuWrapper .wrapper .right .reserv-button::before {
   content: "";
   width: 0;
   height: 103%;
@@ -2775,13 +2763,14 @@ body .menuWrapper .wrapper .right .reserv-button::before {
   display: block;
   z-index: -1;
 }
-body .menuWrapper .wrapper .right .reserv-button:hover::before {
+.menuWrapper .wrapper .right .reserv-button:hover::before {
   width: 105%;
 }
-body .menuWrapper .wrapper .right .reserv-button:hover {
+.menuWrapper .wrapper .right .reserv-button:hover {
   color: #111;
 }
-body .reservation-modal-bg {
+
+.reservation-modal-bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -2796,7 +2785,7 @@ body .reservation-modal-bg {
   z-index: 1000;
   transition: visibility 0.2s, opacity 0.3s;
 }
-body .reservation-modal-bg .res-modal {
+.reservation-modal-bg .res-modal {
   background-color: #fffaf7;
   width: 70%;
   height: 60%;
@@ -2804,14 +2793,14 @@ body .reservation-modal-bg .res-modal {
   position: relative;
   border-radius: 10px;
 }
-body .reservation-modal-bg .res-modal .res-close-btn {
+.reservation-modal-bg .res-modal .res-close-btn {
   position: absolute;
   top: 10px;
   right: 15px;
   scale: 1.2;
   cursor: pointer;
 }
-body .reservation-modal-bg .res-modal .res-modal-head {
+.reservation-modal-bg .res-modal .res-modal-head {
   text-align: center;
   border-bottom: 2px solid rgba(0, 0, 0, 0.593);
   padding-bottom: 15px;
@@ -2819,116 +2808,483 @@ body .reservation-modal-bg .res-modal .res-modal-head {
   font-size: 20px;
   font-weight: 300;
 }
-body .reservation-modal-bg .res-modal .res-modal-boday {
+.reservation-modal-bg .res-modal .res-modal-boday {
   text-align: center;
 }
-body .reservation-modal-bg .res-modal .res-modal-boday p {
+.reservation-modal-bg .res-modal .res-modal-boday p {
   padding-bottom: 10px;
 }
-body .reservation-modal-bg .res-modal .res-modal-boday a {
+.reservation-modal-bg .res-modal .res-modal-boday a {
   padding-bottom: 10px;
 }
-body .res-modal-bg-active {
+
+.res-modal-bg-active {
   visibility: visible;
   opacity: 1;
 }
 
-body .carousel-wrapper {
-  display: flex;
-  height: 500px;
+@media (max-width: 1000px) {
+  .menuWrapper .wrapper .left {
+    width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .menuWrapper .wrapper .left {
+    width: 60%;
+  }
+}
+@media (max-width: 630px) {
+  .menuWrapper {
+    display: none;
+  }
+  .menuWrapper .wrapper .left {
+    display: none;
+  }
+  .menuWrapper .wrapper .right {
+    padding-right: 0;
+    width: 70%;
+  }
+}
+@media (min-width: 630px) {
+  .navvv {
+    display: none;
+  }
+}
+.footer {
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.863);
+  padding: 50px 0;
+}
+.footer .footerWrapp {
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+}
+.footer .footerWrapp .footerSections {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 100%;
+}
+.footer .footerWrapp .footerSections .sectionAddress {
+  width: 25%;
+  color: #fffaf7;
+}
+.footer .footerWrapp .footerSections .sectionAddress h4 {
+  padding-bottom: 30px;
+  font-size: 35px;
+}
+.footer .footerWrapp .footerSections .sectionAddress p {
+  padding-top: 10px;
+  color: #fffaf7;
+}
+.footer .footerWrapp .footerSections .sectionAddress p:nth-child(4) {
+  padding-top: 50px;
+}
+.footer .footerWrapp .footerSections .section {
+  width: 25%;
+  color: #fffaf7;
+}
+.footer .footerWrapp .footerSections .section h4 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.footer .footerWrapp .footerSections .section p:nth-child(5) {
+  padding-top: 50px;
+}
+.footer .footerWrapp .footerSections .section p {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.subscribeDiv {
+  background-color: rgba(0, 0, 0, 0.863);
+  width: 100%;
+}
+.subscribeDiv h4 {
+  color: #fffaf7;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+.subscribeDiv .subscribeWrapper {
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+}
+.subscribeDiv .subscribeWrapper .subscribeInput {
+  width: 400%;
+  max-width: 600px;
+  height: 50px;
+  border: none;
+  border: 2px solid rgba(0, 0, 0, 0.593);
+  border-radius: 7px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+.subscribeDiv .subscribeWrapper .subscribeInput:focus {
+  border: none;
+  border-color: none;
+  outline: none;
+}
+.subscribeDiv .subscribeWrapper .subscribeButton {
+  height: 50px;
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+  background: none;
+  border: none;
+  width: 100px;
+  transition: 0.5s;
+  border-left: 2px solid rgba(0, 0, 0, 0.593);
+  font-size: 20px;
+}
+.subscribeDiv .subscribeWrapper .subscribeButton:hover {
   background-color: rgba(0, 0, 0, 0.593);
+  color: rgba(0, 0, 0, 0.863);
+}
+
+@media (max-width: 1000px) {
+  .footer .footerWrapp .footerSections .empty {
+    display: none;
+  }
+}
+@media (max-width: 630px) {
+  .footer .footerWrapp .footerSections {
+    flex-flow: column;
+  }
+  .footer .footerWrapp .footerSections .sec {
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+  }
+  .footer .footerWrapp .footerSections .sec h4 {
+    padding-bottom: 10px;
+  }
+}
+.reservation {
+  width: 100%;
+}
+.reservation .reservationWrapper {
+  margin: 40px auto;
+  width: 80%;
+  max-width: 500px;
+}
+.reservation .reservationWrapper .reservationHead {
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.863);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+.reservation .reservationWrapper .reservationHead h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.reservation .reservationWrapper .reservationBody {
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+}
+.reservation .reservationWrapper .reservationBody .reservationText {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+}
+.reservation .reservationWrapper .reservationBody .reservationText h4 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.reservation .reservationWrapper .reservationBody .reservationMap {
+  width: 80%;
+  margin: 0 auto;
+  height: 300px;
+}
+
+.contactHead {
+  width: 100%;
+}
+.contactHead h1 {
+  font-size: 100px;
+  text-align: center;
+  padding-top: 40px;
+}
+.contactHead h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.contactHead h3 {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 60px;
+}
+
+.contactForm {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px 70px 70px;
+}
+.contactForm .contactFormWrapper {
+  width: 50%;
+  /* Style inputs with type="text", select elements and textareas */
+  /* Style the submit button with a specific background color etc */
+  /* When moving the mouse over the submit button, add a darker green color */
+}
+.contactForm .contactFormWrapper label {
+  padding-left: 5px;
+}
+.contactForm .contactFormWrapper input[type=text],
+.contactForm .contactFormWrapper select,
+.contactForm .contactFormWrapper textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.contactForm .contactFormWrapper input[type=submit] {
+  background-color: rgba(0, 0, 0, 0.863);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contactForm .contactFormWrapper input[type=submit]:hover {
+  background-color: rgba(0, 0, 0, 0.593);
+}
+.contactForm .contactMap {
+  width: 40%;
+}
+
+@media (max-width: 630px) {
+  .contactForm {
+    flex-flow: column;
+  }
+  .contactForm .contactFormWrapper {
+    width: 100%;
+  }
+  .contactForm .contactMap {
+    width: 100%;
+    height: 300px;
+  }
+}
+.accordionWrapper {
+  font-family: "BenchNine", sans-serif;
+}
+.accordionWrapper p {
+  text-transform: uppercase;
+}
+.accordionWrapper .accordionHead {
+  background: rgba(0, 0, 0, 0.863);
+  color: #fffaf7;
+  padding: 18px 18px;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  font-size: 40px;
+  transition: 0.4s;
+  font-weight: bold;
+  border-bottom: 2px solid hwb(0 40% 60%);
+  border-top: 2px solid hwb(0 40% 60%);
+}
+.accordionWrapper .accordionBottom {
+  background: rgba(0, 0, 0, 0.863);
+  color: #fffaf7;
+  padding: 25px 18px;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  font-size: 40px;
+  transition: 0.4s;
+  font-weight: bold;
+  border-bottom: 2px solid hwb(0 40% 60%);
+}
+.accordionWrapper .accordion {
+  background-color: rgba(0, 0, 0, 0.863);
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+}
+.accordionWrapper .accordion p {
+  color: #fffaf7;
+  font-size: 20px;
+  height: 30px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-body .carousel-wrapper h2 {
-  font-size: 50px;
-}
-body h2 {
+.accordionWrapper .accordion h4 {
+  display: flex;
+  margin: 0 auto;
+  height: 0px;
+  max-width: 150px;
+  color: rgba(0, 0, 0, 0.863);
+  font-size: 15px;
   text-align: center;
-  padding: 40px;
-  font-size: 50px;
-  text-transform: capitalize;
+  color: #fffaf7;
 }
-body .sideWrapper {
-  width: 90%;
-  margin: 150px auto;
-  display: flex;
-  justify-content: space-between;
-  font-family: "Raleway", sans-serif;
-  font-weight: 100;
+.accordionWrapper .active,
+.accordionWrapper .accordion:hover {
+  background-color: rgba(0, 0, 0, 0.593);
 }
-body .sideWrapper .sidePhoto {
-  width: 100%;
-  display: flex;
+.accordionWrapper .accordion:after {
+  content: "+";
+  color: #fffaf7;
+  font-weight: bold;
+  float: right;
+  margin-right: 30px;
+  font-size: 35px;
+  position: absolute;
+  top: -3px;
+  right: 0%;
 }
-body .sideWrapper .sidePhoto img {
-  width: 80%;
-  max-height: 700px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.accordionWrapper .active:after {
+  content: "−";
 }
-body .sideWrapper .sideText {
-  margin: 0px auto;
-  display: flex;
-  width: 90%;
+.accordionWrapper .panel {
+  border-top: 2px solid hwb(0deg 40.7% 59.3%);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  font-family: "Nunito", sans-serif;
 }
-body .sideWrapper .sideText .sideTextBox {
-  display: flex;
-  flex-flow: column;
+.accordionWrapper .panel .accordion-body {
+  padding: 25px 10px;
   justify-content: space-evenly;
-  width: 80%;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.593);
+  transition: 1s;
+}
+.accordionWrapper .panel .accordion-body .product-box {
+  height: 350px;
+  border: 1px solid rgba(0, 0, 0, 0.863);
+  border-radius: 10px;
+  color: #fffaf7;
+  background-color: rgba(0, 0, 0, 0.593);
+  position: relative;
+  margin: 20px auto;
+}
+.accordionWrapper .panel .accordion-body .product-box .imgWrap {
+  height: 200px;
+  width: 280px;
+  overflow: hidden;
+  position: relative;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.accordionWrapper .panel .accordion-body .product-box .imgWrap img {
+  max-width: 200px;
+  max-width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.accordionWrapper .panel .accordion-body .product-box h4 {
+  width: 250px;
   text-align: center;
   margin: 0 auto;
-}
-body .sideWrapper .sideText .sideTextBox h4 {
-  font-size: 30px;
-  font-weight: 500;
-}
-body .sideWrapper .sideText .sideTextBox p {
   font-size: 20px;
-  line-height: 25px;
+  font-weight: bold;
+  margin-top: 15px;
+  width: 90%;
 }
-body .sideWrapper:nth-child(even) {
-  flex-flow: row-reverse;
+.accordionWrapper .panel .accordion-body .product-box h6 {
+  max-width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 90%;
+  font-weight: 100;
+  line-height: 23px;
 }
-body .sideWrapper:nth-child(even) .sidePhoto {
+.accordionWrapper .panel .accordion-body .priceCart {
+  border-radius: 10px;
+  width: 70%;
+  height: 44px;
+  position: absolute;
+  z-index: 1;
+  bottom: -22px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: calc(12px + 0.3vw);
+  overflow: hidden;
   display: flex;
-  justify-content: end;
+  border: 2px solid rgba(0, 0, 0, 0.593);
 }
-body .threeWrapper {
+.accordionWrapper .panel .accordion-body .priceCart .price {
+  width: 50%;
+  height: 100%;
+  background-color: #222;
+  position: relative;
+}
+.accordionWrapper .panel .accordion-body .priceCart .price span {
+  font-size: 25px;
+  position: absolute;
+  left: 25px;
+  top: 6px;
+}
+.accordionWrapper .panel .accordion-body .priceCart .cart {
+  width: 50%;
+  height: 100%;
+  background-color: #770e0e;
+  cursor: pointer;
+}
+.accordionWrapper .panel .accordion-body .priceCart .cart img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 125px;
+  top: 6px;
+  color: white;
+}
+
+.threeWrapper {
   margin: 50px auto;
   display: flex;
   justify-content: space-between;
   width: 90%;
   font-family: "Raleway", sans-serif;
 }
-body .threeWrapper .threeTextBox {
+.threeWrapper .threeTextBox {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   width: 30%;
   text-align: center;
 }
-body .threeWrapper .threeTextBox .iconBox {
+.threeWrapper .threeTextBox .iconBox {
   top: 0;
   scale: 0.5;
   height: 50px;
 }
-body .threeWrapper .threeTextBox h3 {
+.threeWrapper .threeTextBox h3 {
   font-size: 25px;
 }
-body .threeWrapper .threeTextBox h4 {
+.threeWrapper .threeTextBox h4 {
   font-size: 18px;
 }
-body .threeWrapper .threeTextBox p {
+.threeWrapper .threeTextBox p {
   font-size: 16px;
 }
-body .threeWrapper .threeTextBox .threeReservation {
+.threeWrapper .threeTextBox .threeReservation {
   cursor: pointer;
   scale: 1.2;
 }
-body .threeWrapper .threeTextBox .threeReservation button {
+.threeWrapper .threeTextBox .threeReservation button {
   min-width: 148px;
   padding: 5px 10px;
   border: 2px solid rgba(0, 0, 0, 0.863);
@@ -2944,7 +3300,7 @@ body .threeWrapper .threeTextBox .threeReservation button {
   color: rgba(0, 0, 0, 0.863);
   scale: 0.7;
 }
-body .threeWrapper .threeTextBox .threeReservation button::before {
+.threeWrapper .threeTextBox .threeReservation button::before {
   content: "";
   width: 0;
   height: 300%;
@@ -2957,32 +3313,351 @@ body .threeWrapper .threeTextBox .threeReservation button::before {
   display: block;
   z-index: -1;
 }
-body .threeWrapper .threeTextBox .threeReservation button:hover::before {
+.threeWrapper .threeTextBox .threeReservation button:hover::before {
   width: 105%;
 }
-body .threeWrapper .threeTextBox .threeReservation button:hover {
+.threeWrapper .threeTextBox .threeReservation button:hover {
   color: #fffaf7;
 }
-body .threeWrapper .threeImgBox {
+.threeWrapper .threeImgBox {
   width: 30%;
 }
-body .threeWrapper .threeImgBox img {
+.threeWrapper .threeImgBox img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   max-height: 425px;
   height: 100%;
 }
-body .head-photo-wrapper {
-  max-height: 500px;
+
+@media (max-width: 1000px) {
+  .threeWrapper .threeTextBox .iconBox {
+    display: none;
+  }
+}
+@media (max-width: 630px) {
+  .threeWrapper {
+    padding: 40px;
+    flex-flow: wrap;
+    justify-content: space-between;
+    border: 2px solid rgba(0, 0, 0, 0.593);
+  }
+  .threeWrapper .threeTextBox {
+    width: 100%;
+    height: 200px;
+  }
+  .threeWrapper .threeTextBox .threeReservation {
+    display: none;
+  }
+  .threeWrapper .threeImgBox {
+    width: 48%;
+    padding-top: 40px;
+  }
+}
+.menuStarter {
+  width: 100%;
   display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.863);
+  padding: 40px 0;
+}
+.menuStarter .eachBox {
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+}
+.menuStarter .eachBox .imgBox {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  max-height: 400px;
+}
+.menuStarter .eachBox .imgBox img {
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+  z-index: 2;
+}
+.menuStarter .eachBox .imgBox .starterBg {
+  overflow: hidden;
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+}
+.menuStarter .eachBox .textBox {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  z-index: 3;
+  color: #fffaf7;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+.menuStarter .eachBox .textBox h3 {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.menuStarter .eachBox .textBox h4 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.menuStarter .eachBox .textBox h5 {
+  font-size: 15p;
+}
+
+.kitchenWrapper {
+  padding: 0 0 40px 0;
+  font-family: "Raleway", sans-serif;
+}
+.kitchenWrapper .imgWrapper {
+  margin-bottom: 40px;
   position: relative;
 }
-body .head-photo-wrapper img {
+.kitchenWrapper .imgWrapper .overlayImg {
+  position: absolute;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+.kitchenWrapper .imgWrapper .kitchenImg {
+  position: relative;
+}
+.kitchenWrapper .imgWrapper .kitchenImg img {
+  width: 100%;
+}
+.kitchenWrapper .imgWrapper .kitchenImg h5 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.kitchenWrapper .kitchenTextWrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  justify-content: space-between;
+}
+.kitchenWrapper .kitchenTextWrapper .textBoxes {
+  width: 30%;
+}
+.kitchenWrapper .kitchenTextWrapper .textBoxes h3 {
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.kitchenWrapper .kitchenTextWrapper .textBoxes h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.kitchenWrapper .kitchenTextWrapper .textBoxes h5 {
+  font-weight: lighter;
+}
+
+@media (max-width: 1000px) {
+  .kitchenWrapper {
+    padding-bottom: 100px;
+  }
+  .kitchenWrapper .imgWrapper {
+    margin-bottom: 0;
+  }
+  .kitchenWrapper .imgWrapper .kitchenImg h5 {
+    font-size: 25px;
+    min-width: 169px;
+  }
+  .kitchenWrapper .kitchenTextWrapper {
+    flex-flow: wrap;
+    text-align: center;
+  }
+  .kitchenWrapper .kitchenTextWrapper .textBoxes .textBoxes {
+    width: 100%;
+    text-align: center;
+  }
+  .kitchenWrapper .kitchenTextWrapper .textBoxes .textBoxes h3 {
+    padding-top: 50px;
+    padding-bottom: 15px;
+  }
+}
+.sideWrapper {
+  width: 90%;
+  margin: 150px auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+}
+.sideWrapper .sidePhoto {
+  width: 100%;
+  display: flex;
+}
+.sideWrapper .sidePhoto img {
+  width: 80%;
+  max-height: 700px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-body .head-photo-wrapper .h5 {
+.sideWrapper .sideText {
+  margin: 0px auto;
+  display: flex;
+  width: 90%;
+}
+.sideWrapper .sideText .sideTextBox {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+.sideWrapper .sideText .sideTextBox h4 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.sideWrapper .sideText .sideTextBox p {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.sideWrapper:nth-child(even) {
+  flex-flow: row-reverse;
+}
+.sideWrapper:nth-child(even) .sidePhoto {
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width: 1000px) {
+  .sideWrapper .sideText .sideTextBox h4 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .sideWrapper .sideText .sideTextBox p {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 630px) {
+  .sideWrapper {
+    border: 2px solid rgba(0, 0, 0, 0.593);
+    flex-flow: column-reverse;
+    margin: 40px auto;
+    padding: 40px 40px;
+  }
+  .sideWrapper .sidePhoto {
+    padding-top: 40px;
+  }
+  .sideWrapper .sidePhoto img {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .sideWrapper .sideText {
+    width: 100%;
+  }
+  .sideWrapper .sideText .sideTextBox {
+    width: 100%;
+  }
+  .sideWrapper:nth-child(even) {
+    flex-flow: column-reverse;
+  }
+}
+.map {
+  padding: 30px 0 50px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+}
+.map .mapWrapper {
+  width: 95%;
+  display: flex;
+}
+.map .mapWrapper .mapText {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+}
+.map .mapWrapper .mapText .text {
+  margin: 0 auto;
+}
+.map .mapWrapper .mapText .text h4 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  color: rgba(0, 0, 0, 0.863);
+  text-align: center;
+}
+.map .mapWrapper .mapText .text p {
+  font-weight: lighter;
+  padding: 5px 0;
+  color: rgba(0, 0, 0, 0.863);
+}
+.map .mapWrapper .mapDiv {
+  width: 65%;
+  height: 600px;
+}
+
+@media (max-width: 630px) {
+  .map {
+    padding: 0;
+  }
+  .map .mapWrapper {
+    flex-flow: column;
+    width: 100%;
+  }
+  .map .mapWrapper .mapText {
+    display: none;
+  }
+  .map .mapWrapper .mapDiv {
+    width: 100%;
+    padding: 20px;
+  }
+}
+.undermenu {
+  height: 50px;
+  width: 100%;
+}
+
+.mycontainer {
+  width: 96%;
+  margin: 0 auto;
+  max-width: 1350px;
+}
+
+.head-photo-wrapper {
+  max-height: 500px;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.head-photo-wrapper .overlay-headphoto {
+  position: absolute;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+.head-photo-wrapper .h5 {
   color: white;
   font-size: 30px;
   font-weight: bold;
@@ -2999,640 +3674,21 @@ body .head-photo-wrapper .h5 {
   flex-flow: column;
   justify-content: space-evenly;
 }
-body .head-photo-wrapper .web-wrapper {
+.head-photo-wrapper .web-wrapper {
   width: 100%;
   position: relative;
 }
-body .head-photo-wrapper .web-wrapper img {
-  width: 100%;
-  height: 100%;
-}
-body .head-photo-wrapper .photography-wrapper {
-  width: 50%;
-  position: relative;
-}
-body .head-photo-wrapper .photography-wrapper img {
-  width: 100%;
-  height: 100%;
-}
-
-body .menuStarter {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: rgba(0, 0, 0, 0.863);
-  padding: 40px 0;
-}
-body .menuStarter .eachBox {
-  width: 25%;
-  position: relative;
-  overflow: hidden;
-}
-body .menuStarter .eachBox .imgBox {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  max-height: 400px;
-}
-body .menuStarter .eachBox .imgBox img {
-  overflow: hidden;
+.head-photo-wrapper .web-wrapper img {
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.8;
-  z-index: 2;
-}
-body .menuStarter .eachBox .imgBox .starterBg {
-  overflow: hidden;
-  position: absolute;
-  background-color: black;
+  width: 100%;
   height: 100%;
-  width: 100%;
-  max-width: 400px;
 }
-body .menuStarter .eachBox .textBox {
-  width: 100%;
-  position: absolute;
-  bottom: 5px;
-  text-align: center;
-  z-index: 3;
-  color: #fffaf7;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-evenly;
-}
-body .menuStarter .eachBox .textBox h3 {
-  font-size: 22px;
-  padding-bottom: 10px;
-}
-body .menuStarter .eachBox .textBox h4 {
-  font-size: 18px;
-  padding-bottom: 10px;
-}
-body .menuStarter .eachBox .textBox h5 {
-  font-size: 15p;
-}
-body .accordionWrapper {
-  font-family: "BenchNine", sans-serif;
-}
-body .accordionWrapper p {
-  text-transform: uppercase;
-}
-body .accordionWrapper .accordionHead {
-  background: rgba(0, 0, 0, 0.863);
-  color: #fffaf7;
-  padding: 18px 18px;
-  width: 100%;
-  text-align: center;
-  outline: none;
-  font-size: 40px;
-  transition: 0.4s;
-  font-weight: bold;
-  border-bottom: 2px solid hwb(0 40% 60%);
-  border-top: 2px solid hwb(0 40% 60%);
-}
-body .accordionWrapper .accordionBottom {
-  background: rgba(0, 0, 0, 0.863);
-  color: #fffaf7;
-  padding: 25px 18px;
-  width: 100%;
-  text-align: center;
-  outline: none;
-  font-size: 40px;
-  transition: 0.4s;
-  font-weight: bold;
-  border-bottom: 2px solid hwb(0 40% 60%);
-}
-body .accordionWrapper .accordion {
-  background-color: rgba(0, 0, 0, 0.863);
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  position: relative;
-}
-body .accordionWrapper .accordion p {
-  color: #fffaf7;
-  font-size: 20px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .accordionWrapper .accordion h4 {
-  display: flex;
-  margin: 0 auto;
-  height: 0px;
-  max-width: 150px;
-  color: rgba(0, 0, 0, 0.863);
-  font-size: 15px;
-  text-align: center;
-  color: #fffaf7;
-}
-body .accordionWrapper .active,
-body .accordionWrapper .accordion:hover {
-  background-color: rgba(0, 0, 0, 0.593);
-}
-body .accordionWrapper .accordion:after {
-  content: "+";
-  color: #fffaf7;
-  font-weight: bold;
-  float: right;
-  margin-right: 30px;
-  font-size: 35px;
-  position: absolute;
-  top: -3px;
-  right: 0%;
-}
-body .accordionWrapper .active:after {
-  content: "−";
-}
-body .accordionWrapper .panel {
-  border-top: 2px solid hwb(0deg 40.7% 59.3%);
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease-out;
-  font-family: "Nunito", sans-serif;
-}
-body .accordionWrapper .panel .accordion-body {
-  padding: 25px 10px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.593);
-  transition: 1s;
-}
-body .accordionWrapper .panel .accordion-body .product-box {
-  height: 350px;
-  border: 1px solid rgba(0, 0, 0, 0.863);
-  border-radius: 10px;
-  color: #fffaf7;
-  background-color: rgba(0, 0, 0, 0.593);
-  position: relative;
-  margin: 20px auto;
-}
-body .accordionWrapper .panel .accordion-body .product-box .imgWrap {
-  height: 200px;
-  width: 280px;
-  overflow: hidden;
-  position: relative;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-body .accordionWrapper .panel .accordion-body .product-box .imgWrap img {
-  max-width: 200px;
-  max-width: 280px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-}
-body .accordionWrapper .panel .accordion-body .product-box h4 {
-  width: 250px;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 15px;
-  width: 90%;
-}
-body .accordionWrapper .panel .accordion-body .product-box h6 {
-  max-width: 250px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 10px;
-  width: 90%;
-  font-weight: 100;
-  line-height: 23px;
-}
-body .accordionWrapper .panel .accordion-body .priceCart {
-  border-radius: 10px;
-  width: 70%;
-  height: 44px;
-  position: absolute;
-  z-index: 1;
-  bottom: -22px;
-  left: 50%;
-  transform: translate(-50%);
-  font-size: calc(12px + 0.3vw);
-  overflow: hidden;
-  display: flex;
-  border: 2px solid rgba(0, 0, 0, 0.593);
-}
-body .accordionWrapper .panel .accordion-body .priceCart .price {
+.head-photo-wrapper .photography-wrapper {
   width: 50%;
+  position: relative;
+}
+.head-photo-wrapper .photography-wrapper img {
+  width: 100%;
   height: 100%;
-  background-color: #222;
-  position: relative;
-}
-body .accordionWrapper .panel .accordion-body .priceCart .price span {
-  font-size: 25px;
-  position: absolute;
-  left: 25px;
-  top: 6px;
-}
-body .accordionWrapper .panel .accordion-body .priceCart .cart {
-  width: 50%;
-  height: 100%;
-  background-color: #770e0e;
-  cursor: pointer;
-}
-body .accordionWrapper .panel .accordion-body .priceCart .cart img {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  left: 125px;
-  top: 6px;
-  color: white;
-}
-
-body .overallStory {
-  padding: 50px;
-  margin: 0 auto;
-  text-align: center;
-}
-body .overallStory h3 {
-  font-size: 35px;
-  font-weight: bold;
-  padding-bottom: 30px;
-  text-align: center;
-}
-body .overallStory img {
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-body .overallStory p {
-  font-size: 25px;
-  font-weight: 100;
-  width: 80%;
-  margin: 0 auto;
-}
-
-body .contactHead {
-  width: 100%;
-}
-body .contactHead h1 {
-  font-size: 100px;
-  text-align: center;
-  padding-top: 40px;
-}
-body .contactHead h2 {
-  font-size: 30px;
-  text-align: center;
-}
-body .contactHead h3 {
-  font-size: 40px;
-  text-align: center;
-  padding-bottom: 30px;
-  padding-top: 60px;
-}
-body .contactForm {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 70px 70px 70px;
-}
-body .contactForm .contactFormWrapper {
-  width: 50%;
-  /* Style inputs with type="text", select elements and textareas */
-  /* Style the submit button with a specific background color etc */
-  /* When moving the mouse over the submit button, add a darker green color */
-}
-body .contactForm .contactFormWrapper label {
-  padding-left: 5px;
-}
-body .contactForm .contactFormWrapper input[type=text],
-body .contactForm .contactFormWrapper select,
-body .contactForm .contactFormWrapper textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-body .contactForm .contactFormWrapper input[type=submit] {
-  background-color: rgba(0, 0, 0, 0.863);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-body .contactForm .contactFormWrapper input[type=submit]:hover {
-  background-color: rgba(0, 0, 0, 0.593);
-}
-body .contactForm .contactMap {
-  width: 40%;
-}
-
-body .reservation {
-  width: 100%;
-}
-body .reservation .reservationWrapper {
-  margin: 40px auto;
-  width: 80%;
-  max-width: 500px;
-}
-body .reservation .reservationWrapper .reservationHead {
-  text-align: center;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.863);
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  padding-top: 40px;
-}
-body .reservation .reservationWrapper .reservationHead h3 {
-  font-size: 25px;
-  font-weight: bold;
-}
-body .reservation .reservationWrapper .reservationBody {
-  display: flex;
-  flex-flow: column;
-  margin: 0 auto;
-}
-body .reservation .reservationWrapper .reservationBody .reservationText {
-  text-align: center;
-  display: flex;
-  flex-flow: column;
-}
-body .reservation .reservationWrapper .reservationBody .reservationText h4 {
-  font-size: 18px;
-  font-weight: bold;
-  padding-bottom: 30px;
-}
-body .reservation .reservationWrapper .reservationBody .reservationMap {
-  width: 80%;
-  margin: 0 auto;
-  height: 300px;
-}
-
-body .map {
-  padding: 30px 0 50px 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  font-family: "Raleway", sans-serif;
-}
-body .map .mapWrapper {
-  width: 95%;
-  display: flex;
-}
-body .map .mapWrapper .mapText {
-  width: 35%;
-  display: flex;
-  justify-content: space-around;
-  flex-flow: column;
-}
-body .map .mapWrapper .mapText .text {
-  margin: 0 auto;
-}
-body .map .mapWrapper .mapText .text h4 {
-  font-size: 20px;
-  font-weight: bold;
-  padding-bottom: 15px;
-  color: rgba(0, 0, 0, 0.863);
-  text-align: center;
-}
-body .map .mapWrapper .mapText .text p {
-  font-weight: lighter;
-  padding: 5px 0;
-  color: rgba(0, 0, 0, 0.863);
-}
-body .map .mapWrapper .mapDiv {
-  width: 65%;
-  height: 600px;
-}
-body .footer {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.863);
-  padding: 50px 0;
-}
-body .footer .footerWrapp {
-  margin: 0 auto;
-  display: flex;
-  width: 80%;
-}
-body .footer .footerWrapp .footerSections {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  width: 100%;
-}
-body .footer .footerWrapp .footerSections .sectionAddress {
-  width: 25%;
-  color: #fffaf7;
-}
-body .footer .footerWrapp .footerSections .sectionAddress h4 {
-  padding-bottom: 30px;
-  font-size: 35px;
-}
-body .footer .footerWrapp .footerSections .sectionAddress p {
-  padding-top: 10px;
-  color: #fffaf7;
-}
-body .footer .footerWrapp .footerSections .sectionAddress p:nth-child(4) {
-  padding-top: 50px;
-}
-body .footer .footerWrapp .footerSections .section {
-  width: 25%;
-  color: #fffaf7;
-}
-body .footer .footerWrapp .footerSections .section h4 {
-  font-size: 30px;
-  padding-bottom: 30px;
-}
-body .footer .footerWrapp .footerSections .section p:nth-child(5) {
-  padding-top: 50px;
-}
-body .footer .footerWrapp .footerSections .section p {
-  font-size: 15px;
-  padding-top: 10px;
-}
-body .subscribeDiv {
-  background-color: rgba(0, 0, 0, 0.863);
-  width: 100%;
-}
-body .subscribeDiv h4 {
-  color: #fffaf7;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 20px;
-}
-body .subscribeDiv .subscribeWrapper {
-  margin: 0 auto;
-  width: 80%;
-  position: relative;
-  overflow: hidden;
-  max-width: 600px;
-}
-body .subscribeDiv .subscribeWrapper .subscribeInput {
-  width: 400%;
-  max-width: 600px;
-  height: 50px;
-  border: none;
-  border: 2px solid rgba(0, 0, 0, 0.593);
-  border-radius: 7px;
-  padding-left: 10px;
-  font-size: 18px;
-}
-body .subscribeDiv .subscribeWrapper .subscribeInput:focus {
-  border: none;
-  border-color: none;
-  outline: none;
-}
-body .subscribeDiv .subscribeWrapper .subscribeButton {
-  height: 50px;
-  position: absolute;
-  right: 0px;
-  z-index: 1;
-  background: none;
-  border: none;
-  width: 100px;
-  transition: 0.5s;
-  border-left: 2px solid rgba(0, 0, 0, 0.593);
-  font-size: 20px;
-}
-body .subscribeDiv .subscribeWrapper .subscribeButton:hover {
-  background-color: rgba(0, 0, 0, 0.593);
-  color: rgba(0, 0, 0, 0.863);
-}
-
-@media (max-width: 1000px) {
-  body .menuWrapper .wrapper .left {
-    width: 50%;
-  }
-  body .sideWrapper .sideText .sideTextBox h4 {
-    font-size: 20px;
-    padding-bottom: 20px;
-  }
-  body .sideWrapper .sideText .sideTextBox p {
-    font-size: 15px;
-  }
-  body .footer .footerWrapp .footerSections .empty {
-    display: none;
-  }
-  body .threeWrapper .threeTextBox .iconBox {
-    display: none;
-  }
-  body .kitchenWrapper .imgWrapper {
-    margin-bottom: 0;
-  }
-  body .kitchenWrapper .kitchenTextWrapper {
-    flex-flow: wrap;
-  }
-  body .kitchenWrapper .kitchenTextWrapper .textBoxes {
-    width: 100%;
-    text-align: center;
-  }
-  body .kitchenWrapper .kitchenTextWrapper .textBoxes h3 {
-    padding-top: 50px;
-    padding-bottom: 15px;
-  }
-}
-@media (max-width: 630px) {
-  body {
-    margin: 0 auto;
-  }
-  body .menuWrapper {
-    display: none;
-  }
-  body .menuWrapper .wrapper .left {
-    display: none;
-  }
-  body .menuWrapper .wrapper .right {
-    padding-right: 0;
-    width: 70%;
-  }
-  body .contactForm {
-    flex-flow: column;
-  }
-  body .contactForm .contactFormWrapper {
-    width: 100%;
-  }
-  body .contactForm .contactMap {
-    width: 100%;
-    height: 300px;
-  }
-  body .sideWrapper {
-    border: 2px solid rgba(0, 0, 0, 0.593);
-    flex-flow: column-reverse;
-    margin: 40px auto;
-    padding: 40px 40px;
-  }
-  body .sideWrapper .sidePhoto {
-    padding-top: 40px;
-  }
-  body .sideWrapper .sidePhoto img {
-    margin: 0 auto;
-    width: 100%;
-  }
-  body .sideWrapper .sideText {
-    width: 100%;
-  }
-  body .sideWrapper .sideText .sideTextBox {
-    width: 100%;
-  }
-  body .sideWrapper:nth-child(even) {
-    flex-flow: column-reverse;
-  }
-  body .threeWrapper {
-    padding: 40px;
-    flex-flow: wrap;
-    justify-content: space-between;
-    border: 2px solid rgba(0, 0, 0, 0.593);
-  }
-  body .threeWrapper .threeTextBox {
-    width: 100%;
-    height: 200px;
-  }
-  body .threeWrapper .threeTextBox .threeReservation {
-    display: none;
-  }
-  body .threeWrapper .threeImgBox {
-    width: 48%;
-    padding-top: 40px;
-  }
-  body .kitchenWrapper {
-    padding-bottom: 100px;
-  }
-  body .kitchenWrapper .imgWrapper .kitchenImg h5 {
-    font-size: 25px;
-    min-width: 169px;
-  }
-  body .kitchenWrapper .kitchenTextWrapper {
-    text-align: center;
-  }
-  body .map {
-    padding: 0;
-  }
-  body .map .mapWrapper {
-    flex-flow: column;
-    width: 100%;
-  }
-  body .map .mapWrapper .mapText {
-    display: none;
-  }
-  body .map .mapWrapper .mapDiv {
-    width: 100%;
-    padding: 20px;
-  }
-  body .footer .footerWrapp .footerSections {
-    flex-flow: column;
-  }
-  body .footer .footerWrapp .footerSections .sec {
-    text-align: center;
-    width: 100%;
-    padding-top: 30px;
-  }
-  body .footer .footerWrapp .footerSections .sec h4 {
-    padding-bottom: 10px;
-  }
-}
-@media (min-width: 630px) {
-  body .navvv {
-    display: none;
-  }
 }/*# sourceMappingURL=global.css.map */

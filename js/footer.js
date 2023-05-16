@@ -1,6 +1,9 @@
+
+
+
 class chachaFooter extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `  
+    connectedCallback() {
+      this.innerHTML = `  
       <div class="subscribeDiv">
   <div class="subscribeText"><h4>Subscribe If You Want To Be Updated For Events And News</h4></div>
  <div class="subscribeWrapper">
@@ -41,7 +44,7 @@ class chachaFooter extends HTMLElement {
 </footer>
       
       `;
+    }
   }
-}
-
-customElements.define("chacha-footer", chachaFooter);
+      
+  customElements.define('chacha-footer', chachaFooter);
