@@ -2948,7 +2948,7 @@ a {
   color: rgba(0, 0, 0, 0.863);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .footer .footerWrapp .footerSections .empty {
     display: none;
   }
@@ -3635,6 +3635,7 @@ a {
   margin: auto;
   overflow: hidden;
   position: relative;
+  background-color: black;
 }
 .carousel-wrapper .left-opacity {
   width: 15%;
@@ -3686,7 +3687,7 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  max-width: 600px;
+  height: 100%;
 }
 
 body {
