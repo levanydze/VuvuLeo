@@ -3675,10 +3675,8 @@ a {
   cursor: pointer;
 }
 .carousel-wrapper .carousel-container {
-  overflow: hidden;
   margin: auto;
   width: 50%;
-  border: 1px solid red;
 }
 .carousel-wrapper .carousel-container .carousel-slide {
   display: flex;

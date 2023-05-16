@@ -43,10 +43,9 @@
     cursor: pointer;
   }
   .carousel-container {
-    overflow: hidden;
+    // overflow: hidden;
     margin: auto;
     width: 50%;
-    border: 1px solid red;
 
     .carousel-slide {
       display: flex;
@@ -56,7 +55,6 @@
         object-fit: cover;
         width: 100%;
         max-width: 600px;
-
       }
     }
   }
