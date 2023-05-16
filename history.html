@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VuvuLeo Web & Photo</title>
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=BenchNine:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=BenchNine:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script type="module" src="js/header.js"></script>
     <script type="module" src="js/footer.js" defer></script>
     <script src="js/accordion.js" defer></script>
     <script src="js/reservation.js" defer></script>
-    <script src="https://kit.fontawesome.com/e8a8d87892.js" crossorigin="anonymous"></script>
+    <script src="js/carouseltest.js" defer></script>
 
-    
+    <script
+      src="https://kit.fontawesome.com/e8a8d87892.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="body">
+    <!-- js header -->
+    <chacha-header> </chacha-header>
+    <!-- js header -->
 
-</head>
-<body class="body">
+    <div class="carousel-wrapper">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+              <img src="/img/testslider/Untitled-9.jpg" alt="" />
+              <img src="/img/testslider/Untitled-10.jpg" id="lastClone" alt="" />
+              <img src="/img/testslider/Untitled-1.jpg" alt="" />
+              <img src="/img/testslider/Untitled-2.jpg" alt="" />
+              <img src="/img/testslider/Untitled-3.jpg" alt="" />
+              <img src="/img/testslider/Untitled-4.jpg" alt="" />
+              <img src="/img/testslider/Untitled-5.jpg" alt="" />
+              <img src="/img/testslider/Untitled-6.jpg" alt="" />
+              <img src="/img/testslider/Untitled-7.jpg" alt="" />
+              <img src="/img/testslider/Untitled-8.jpg" alt="" />
+              <img src="/img/testslider/Untitled-9.jpg" alt="" />
+              <img src="/img/testslider/Untitled-10.jpg" alt="" />
+              <img src="/img/testslider/Untitled-1.jpg" id="firstClone" alt="" />
+              <img src="/img/testslider/Untitled-2.jpg" alt="" />
+      
+            </div>
+          </div>
+    </div>
+    <button id="prevBtn">Prev</button>
+    <button id="nextBtn">Next</button>
 
-
-<!-- js header -->
-<chacha-header> </chacha-header>
-<!-- js header -->
-
-<!-- js Footer -->
-<chacha-footer> </chacha-footer>
-<!-- js Footer -->  
-
-
-
-    
-    
-</body>
+    <!-- js Footer -->
+    <chacha-footer> </chacha-footer>
+    <!-- js Footer -->
+  </body>
 </html>

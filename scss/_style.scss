@@ -1,6 +1,6 @@
 //   ====== START Header - Footer ======  //
 // START ELEMENTS
-body{
+body {
   background-color: $Background;
 }
 .undermenu {
@@ -70,3 +70,23 @@ body{
 }
 
 // head photo end
+
+//carousel styles start
+
+.carousel-wrapper{
+  .carousel-container {
+    margin: auto;
+    width: 30%;
+    .carousel-slide {
+      display: flex;
+      width: 100%;
+  
+      img {
+        width: 100%;
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+//carousel styles end

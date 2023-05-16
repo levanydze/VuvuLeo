@@ -3697,4 +3697,17 @@ body {
 .head-photo-wrapper .photography-wrapper img {
   width: 100%;
   height: 100%;
+}
+
+.carousel-wrapper .carousel-container {
+  margin: auto;
+  width: 30%;
+}
+.carousel-wrapper .carousel-container .carousel-slide {
+  display: flex;
+  width: 100%;
+}
+.carousel-wrapper .carousel-container .carousel-slide img {
+  width: 100%;
+  max-width: 600px;
 }/*# sourceMappingURL=global.css.map */
