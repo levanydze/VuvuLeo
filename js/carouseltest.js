@@ -9,15 +9,15 @@ const size = carouselImages[0].clientWidth;
 carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 
 nextBtn.addEventListener("click", () => {
-  if (counter >= carouselImages.lenght - 1) return;
+  if (counter >= carouselImages.lenght - 2) return;
   carouselSlide.style.transition = "transform 0.4s ease-in-out";
   counter++;
   carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 });
 
 prevBtn.addEventListener("click", () => {
-  if (counter <= 0) return;
-  carouselSlide.style.transition = "transform 0.4s ease-in-out";
+  if (counter <= 1) return;
+  carouselSlide.style.transition = "transform 0.4s  ease-in-out";
   counter--;
   carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 });
