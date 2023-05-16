@@ -9,4 +9,3 @@ modalBtn.addEventListener("click", function () {
 modalClose.addEventListener("click", function () {
   modalBg.classList.remove("res-modal-bg-active");
 });
-
