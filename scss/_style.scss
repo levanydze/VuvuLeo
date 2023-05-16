@@ -73,14 +73,19 @@ body {
 
 //carousel styles start
 
-.carousel-wrapper{
+.carousel-wrapper {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
   .carousel-container {
+    overflow: darken;
+
     margin: auto;
-    width: 30%;
+    width: 50%;
     .carousel-slide {
       display: flex;
       width: 100%;
-  
+
       img {
         width: 100%;
         max-width: 600px;

@@ -3699,9 +3699,15 @@ body {
   height: 100%;
 }
 
-.carousel-wrapper .carousel-container {
+.carousel-wrapper {
+  width: 80%;
   margin: auto;
-  width: 30%;
+  overflow: hidden;
+}
+.carousel-wrapper .carousel-container {
+  overflow: darken;
+  margin: auto;
+  width: 50%;
 }
 .carousel-wrapper .carousel-container .carousel-slide {
   display: flex;
