@@ -73,64 +73,6 @@ body {
 
 //carousel styles start
 
-.carousel-wrapper {
-  .left-opacity {
-    width: 100px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.291);
-    z-index: 9;
-    position: absolute;
-  }
-  .right-opacity {
-    right: 0;
-    width: 100px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.291);
-    z-index: 9;
-    position: absolute;
-  }
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  #nextBtn {
-    position: absolute;
-    margin-right: 10px;
-    right: 0;
-    top: 45%;
-    z-index: 10;
-    border: none;
-    background: none;
-    font-size: 30px;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-  }
-  #prevBtn {
-    position: absolute;
-    margin-left: 10px;
-    top: 45%;
-    z-index: 10;
-    border: none;
-    background: none;
-    font-size: 30px;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-  }
-  .carousel-container {
-    overflow: darken;
 
-    margin: auto;
-    width: 50%;
-    .carousel-slide {
-      display: flex;
-      width: 100%;
-
-      img {
-        width: 100%;
-        max-width: 600px;
-      }
-    }
-  }
-}
 
 //carousel styles end

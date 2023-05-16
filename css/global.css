@@ -3630,6 +3630,64 @@ a {
     padding: 20px;
   }
 }
+.carousel-wrapper {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-wrapper .left-opacity {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.291);
+  z-index: 9;
+  position: absolute;
+}
+.carousel-wrapper .right-opacity {
+  right: 0;
+  width: 20%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.291);
+  z-index: 9;
+  position: absolute;
+}
+.carousel-wrapper #nextBtn {
+  position: absolute;
+  margin-right: 10px;
+  right: 0;
+  top: 45%;
+  z-index: 10;
+  border: none;
+  background: none;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+.carousel-wrapper #prevBtn {
+  position: absolute;
+  margin-left: 10px;
+  top: 45%;
+  z-index: 10;
+  border: none;
+  background: none;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+.carousel-wrapper .carousel-container {
+  overflow: hidden;
+  margin: auto;
+  width: 80%;
+}
+.carousel-wrapper .carousel-container .carousel-slide {
+  display: flex;
+  width: 100%;
+}
+.carousel-wrapper .carousel-container .carousel-slide img {
+  width: 100%;
+  max-width: 600px;
+}
+
 body {
   background-color: #fffaf7;
 }
@@ -3697,62 +3755,4 @@ body {
 .head-photo-wrapper .photography-wrapper img {
   width: 100%;
   height: 100%;
-}
-
-.carousel-wrapper {
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-}
-.carousel-wrapper .left-opacity {
-  width: 100px;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.291);
-  z-index: 9;
-  position: absolute;
-}
-.carousel-wrapper .right-opacity {
-  right: 0;
-  width: 100px;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.291);
-  z-index: 9;
-  position: absolute;
-}
-.carousel-wrapper #nextBtn {
-  position: absolute;
-  margin-right: 10px;
-  right: 0;
-  top: 45%;
-  z-index: 10;
-  border: none;
-  background: none;
-  font-size: 30px;
-  color: rgba(255, 255, 255, 0.8);
-  cursor: pointer;
-}
-.carousel-wrapper #prevBtn {
-  position: absolute;
-  margin-left: 10px;
-  top: 45%;
-  z-index: 10;
-  border: none;
-  background: none;
-  font-size: 30px;
-  color: rgba(255, 255, 255, 0.8);
-  cursor: pointer;
-}
-.carousel-wrapper .carousel-container {
-  overflow: darken;
-  margin: auto;
-  width: 50%;
-}
-.carousel-wrapper .carousel-container .carousel-slide {
-  display: flex;
-  width: 100%;
-}
-.carousel-wrapper .carousel-container .carousel-slide img {
-  width: 100%;
-  max-width: 600px;
 }/*# sourceMappingURL=global.css.map */
