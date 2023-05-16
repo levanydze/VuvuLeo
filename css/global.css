@@ -3637,23 +3637,23 @@ a {
   position: relative;
 }
 .carousel-wrapper .left-opacity {
-  width: 5%;
+  width: 15%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.291);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 9;
   position: absolute;
 }
 .carousel-wrapper .right-opacity {
   right: 0;
-  width: 5%;
+  width: 15%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.291);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 9;
   position: absolute;
 }
 .carousel-wrapper #nextBtn {
   position: absolute;
-  margin-right: 10px;
+  margin-right: 60px;
   right: 0;
   top: 45%;
   z-index: 10;
@@ -3665,7 +3665,7 @@ a {
 }
 .carousel-wrapper #prevBtn {
   position: absolute;
-  margin-left: 10px;
+  margin-left: 60px;
   top: 45%;
   z-index: 10;
   border: none;
