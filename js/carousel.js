@@ -5,7 +5,8 @@ const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
 
 let counter = 2;
-const size = carouselImages[0].clientWidth;
+const size = "389.5"; 
+//  carouselImages2[0].clientWidth   sxvadasxva zomis fotoebis shemtxvevashi
 carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 
 nextBtn.addEventListener("click", () => {
@@ -44,7 +45,7 @@ const prevBtn1 = document.querySelector("#prevBtn1");
 const nextBtn1 = document.querySelector("#nextBtn1");
 
 let counter1 = 2;
-const size1 = carouselImages1[0].clientWidth;
+const size1 = "389.5";
 carouselSlide1.style.transform = "translateX(" + -size1 * counter1 + "px)";
 
 nextBtn1.addEventListener("click", () => {
@@ -83,7 +84,7 @@ const prevBtn2 = document.querySelector("#prevBtn2");
 const nextBtn2 = document.querySelector("#nextBtn2");
 
 let counter2 = 2;
-const size2 = carouselImages2[0].clientWidth;
+const size2 = "389.5";
 carouselSlide2.style.transform = "translateX(" + -size2 * counter2 + "px)";
 
 nextBtn2.addEventListener("click", () => {
