@@ -3638,40 +3638,25 @@ a {
   background-color: black;
   margin-bottom: 60px;
 }
-.carousel-wrapper .left-opacity {
-  width: 15%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 9;
-  position: absolute;
-}
-.carousel-wrapper .right-opacity {
-  right: 0;
-  width: 15%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 9;
-  position: absolute;
-}
 .carousel-wrapper #nextBtn {
   position: absolute;
-  margin-right: 60px;
   right: 0;
-  top: 45%;
   z-index: 10;
   border: none;
-  background: none;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 15%;
   font-size: 30px;
   color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
 }
 .carousel-wrapper #prevBtn {
   position: absolute;
-  margin-left: 60px;
-  top: 45%;
   z-index: 10;
   border: none;
-  background: none;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 15%;
   font-size: 30px;
   color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
@@ -3760,6 +3745,12 @@ body {
   height: 100%;
 }
 
+.photo-container {
+  background-color: rgba(0, 0, 0, 0.863);
+  padding-bottom: 60px;
+  color: #fffaf7;
+}
+
 h2 {
   font-size: 30px;
   text-align: center;
@@ -3774,40 +3765,25 @@ h2 {
   background-color: black;
   margin-bottom: 60px;
 }
-.carousel-wrapper1 .left-opacity1 {
-  width: 15%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 9;
-  position: absolute;
-}
-.carousel-wrapper1 .right-opacity1 {
-  right: 0;
-  width: 15%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 9;
-  position: absolute;
-}
 .carousel-wrapper1 #nextBtn1 {
   position: absolute;
-  margin-right: 60px;
   right: 0;
-  top: 45%;
   z-index: 10;
   border: none;
-  background: none;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 15%;
   font-size: 30px;
   color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
 }
 .carousel-wrapper1 #prevBtn1 {
   position: absolute;
-  margin-left: 60px;
-  top: 45%;
   z-index: 10;
   border: none;
-  background: none;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 15%;
   font-size: 30px;
   color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
@@ -3833,42 +3809,26 @@ h2 {
   overflow: hidden;
   position: relative;
   background-color: black;
-  margin-bottom: 30px;
-}
-.carousel-wrapper2 .left-opacity2 {
-  width: 15%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 9;
-  position: absolute;
-}
-.carousel-wrapper2 .right-opacity2 {
-  right: 0;
-  width: 15%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 9;
-  position: absolute;
 }
 .carousel-wrapper2 #nextBtn2 {
   position: absolute;
-  margin-right: 60px;
   right: 0;
-  top: 45%;
   z-index: 10;
   border: none;
-  background: none;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 15%;
   font-size: 30px;
   color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
 }
 .carousel-wrapper2 #prevBtn2 {
   position: absolute;
-  margin-left: 60px;
-  top: 45%;
   z-index: 10;
   border: none;
-  background: none;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 15%;
   font-size: 30px;
   color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
