@@ -3017,6 +3017,7 @@ a {
 .contactHead h2 {
   font-size: 30px;
   text-align: center;
+  padding: 10px;
 }
 .contactHead h3 {
   font-size: 40px;
@@ -3750,8 +3751,7 @@ body {
   padding-bottom: 60px;
   color: #fffaf7;
 }
-
-h2 {
+.photo-container h2 {
   font-size: 30px;
   text-align: center;
   padding: 40px;
